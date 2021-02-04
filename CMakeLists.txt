@@ -7,7 +7,8 @@ set(SRC_DIR "${CMAKE_CURRENT_SOURCE_DIR}/src")
 set(INCLUDE "${CMAKE_CURRENT_SOURCE_DIR}/include")
 
 # change here for source files
-set(SOURCES "${SRC_DIR}/shader1_main.cpp" "${SRC_DIR}/shader1.cpp" "${INCLUDE}/shader1.h")
+# set(SOURCES "${SRC_DIR}/shader1_main.cpp" "${SRC_DIR}/shader1.cpp" "${INCLUDE}/shader1.h")
+set(SOURCES "${SRC_DIR}/transform_rectangle.cpp" "${SRC_DIR}/shader1.cpp" "${INCLUDE}/shader1.h")
 set(LIB_DIR "${CMAKE_CURRENT_SOURCE_DIR}/lib")
 set(EXE "main")
 
@@ -34,3 +35,11 @@ add_library("glad" "${GLAD_DIR}/src/glad.c")
 target_include_directories("glad" PRIVATE "${GLAD_DIR}/include")
 target_include_directories(${EXE} PRIVATE "${GLAD_DIR}/include")
 target_link_libraries(${EXE} "glad" "${CMAKE_DL_LIBS}")
+
+# stb
+set(STB_DIR "${LIB_DIR}/stb")
+add_library("stb" "${STB_DIR}/src/stb_image.cpp")
+target_include_directories("stb" PRIVATE "${STB_DIR}/include")
+target_include_directories(${EXE} PRIVATE "${STB_DIR}/include")
+target_link_libraries(${EXE} "stb" "${CMAKE_DL_LIBS}")
+
