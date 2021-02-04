@@ -8,7 +8,7 @@ set(INCLUDE "${CMAKE_CURRENT_SOURCE_DIR}/include")
 
 # change here for source files
 # set(SOURCES "${SRC_DIR}/shader1_main.cpp" "${SRC_DIR}/shader1.cpp" "${INCLUDE}/shader1.h")
-set(SOURCES "${SRC_DIR}/transform_rectangle.cpp" "${SRC_DIR}/shader1.cpp" "${INCLUDE}/shader1.h")
+set(SOURCES "${SRC_DIR}/coordinate_system_eg.cpp" "${SRC_DIR}/shader1.cpp" "${INCLUDE}/shader1.h")
 set(LIB_DIR "${CMAKE_CURRENT_SOURCE_DIR}/lib")
 set(EXE "main")
 
