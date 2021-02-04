@@ -177,9 +177,10 @@ int main()
         
         glm::mat4 trans = glm::mat4(1.0f);
         // std::cout << glm::to_string(trans) <<std::endl;
-        trans = glm::rotate(trans, glm::radians(45.0f), glm::vec3(0.0, 0.0, 1.0));
+        // trans = glm::rotate(trans, glm::radians(45.0f), glm::vec3(0.0, 0.0, 1.0));
+        trans = glm::rotate(trans, (float)glfwGetTime(), glm::vec3(0.0, 0.0, 1.0));
         // std::cout << glm::to_string(trans) <<std::endl;
-        trans = glm::scale(trans, glm::vec3(0.5, 0.5, 0.5));
+        trans = glm::translate(trans, glm::vec3(0.5, 0.5, 0.5));
         
         // draw our first triangle
         ourShader.use();
