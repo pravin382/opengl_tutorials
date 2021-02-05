@@ -3,7 +3,7 @@ cmake_minimum_required(VERSION 3.0)
 project(hello_world)
 
 # Source files
-set(SRC_DIR "${CMAKE_CURRENT_SOURCE_DIR}/src")
+set(SRC_DIR "${CMAKE_CURRENT_SOURCE_DIR}/src/opengl_basic")
 set(INCLUDE "${CMAKE_CURRENT_SOURCE_DIR}/include")
 
 # change here for source files
