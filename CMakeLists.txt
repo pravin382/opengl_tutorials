@@ -43,3 +43,5 @@ target_include_directories("stb" PRIVATE "${STB_DIR}/include")
 target_include_directories(${EXE} PRIVATE "${STB_DIR}/include")
 target_link_libraries(${EXE} "stb" "${CMAKE_DL_LIBS}")
 
+# assimp
+find_package(assimp REQUIRED)
